@@ -29,11 +29,13 @@ export default function About() {
       <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-3 lg:gap-16">
-            {/* Photo Placeholder */}
+            {/* Photo */}
             <div className="lg:col-span-1">
-              <div className="mx-auto flex aspect-square max-w-xs items-center justify-center rounded-2xl bg-gray-200">
-                <span className="text-6xl font-bold text-gray-400">RLC</span>
-              </div>
+              <img
+                src="https://i.imgur.com/LchjL48.jpeg"
+                alt="Dr. Richard L. Chambers"
+                className="mx-auto aspect-square max-w-xs rounded-2xl object-cover"
+              />
             </div>
 
             {/* Bio */}

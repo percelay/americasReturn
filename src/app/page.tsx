@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, Target, TrendingUp, Users, Award } from "lucide-react";
+import {
+  ArrowRight,
+  Target,
+  TrendingUp,
+  Users,
+  Award,
+  Download,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -129,6 +136,40 @@ export default function Home() {
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* S.A.L.E.S. Method Visual */}
+      <section className="bg-navy py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              The S.A.L.E.S.® Method
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
+              A proven framework for solution selling that transforms how your
+              team engages with customers.
+            </p>
+          </div>
+          <div className="mt-12 flex flex-col items-center">
+            <div className="overflow-hidden rounded-xl bg-white p-4 shadow-lg">
+              <img
+                src="https://i.imgur.com/6V0TQ6i.png"
+                alt="The S.A.L.E.S. Method - A visual guide to solution selling"
+                className="max-w-full md:max-w-2xl lg:max-w-3xl"
+              />
+            </div>
+            <a
+              href="https://i.imgur.com/6V0TQ6i.png"
+              download="SALES-Method.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-base font-semibold text-navy transition-colors hover:bg-gold-dark"
+            >
+              <Download className="h-5 w-5" />
+              Download the S.A.L.E.S.® Method
+            </a>
           </div>
         </div>
       </section>
